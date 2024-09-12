@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log_in{
+    display: none;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 8px;
+    width: 70%;
+    aspect-ratio: 16/9;
+}
+
+h6:hover{
+color: brown;
+}
+
+
+.submit{
+    border-radius: 30px;
+    outline: none;
+    color: rgb(7, 81, 7);
+    background-color: white;
+
+}
+
+
+.submit:hover{
+       
+    color: white;
+    background-color:rgb(7, 81, 7) ;
+}
+
+input{
+    width: 100%;
+}
+
+
+
+
+
+
+.registration{
+    display: none;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 8px;
+    width: 70%;
+    aspect-ratio: 16/9;
+}
+
+
+
+.welcome{
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 8px;
+    width: 70%;
+    aspect-ratio: 16/9;
+    color: black;
+}
