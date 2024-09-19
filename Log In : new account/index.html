@@ -10,23 +10,29 @@
 
 <body>
 
+<!-- __________________________________________________ -->
 
-
-    <div class="log_in">
+    <div class="log_in hidden" id="login">
 
         <h2>Sign in to our site</h2>
         <input type="text" placeholder="login">
         <input type="password" placeholder="password">
         
-       <input class="submit" type="submit" placeholder="Log In">
-       <h6 id="forget">Forgot password?</h6>
+        <div class="low_row">
+
+            <button id="logInBtn" class="submit" type="submit">Log In</button>
+            <h6 id="forget">Forgot password?</h6>
+            <h6 id="create">create account</h6>
+
+        </div>
+      
 
     </div>
 
+<!-- __________________________________________________ -->
 
 
-
-    <div class="registration">
+    <div class="registration" id="registration">
 
         <h1>Registration</h2>
         <input type="text" placeholder="name">
@@ -34,18 +40,21 @@
         <input type="number" placeholder="phone">
         <input type="text" placeholder="mail">
         <input type="password" placeholder="password">
-        <input type="submit" placeholder="submit">
+        <button id="registrationBtn" class="submit" type="submit">Create</button>
 
     </div>
 
 
 
-    <div class="welcome">
+<!-- __________________________________________________ -->
+
+    <div class="welcome hidden" id="welcome">
+        <h6 id="exitBtn">exit</h6>
         <h1>Welcome</h1>
     </div>
+<!-- __________________________________________________ -->
 
 
-
-
+<script src="/javascript.js"></script>
 </body>
 </html>
