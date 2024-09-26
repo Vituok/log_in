@@ -13,7 +13,7 @@ const page = window.location.search;
 // const urlParams = new URLSearchParams(queryString);
 // const page = urlParams.get("page")
 
-
+123
 
 const loginPage = document.getElementById(pages.login)
 const registrationPage = document.getElementById(pages.registration)
