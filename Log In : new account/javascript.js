@@ -20,23 +20,54 @@ const registrationPage = document.getElementById(pages.registration)
 const welcomePage = document.getElementById(pages.welcome)
 
 
+let  log_inputs = []
+
 if(page === `?${pages.login}`) {
     welcomePage.classList.add("hidden");
     registrationPage.classList.add("hidden");
     loginPage.classList.remove("hidden")
+   
+    
+    log_inputs = [
+
+        {name: "login", 
+            element: document.getElementById("log_login")
+        },
+    
+        {name: "log_password", 
+            element: document.getElementById("log_password")
+        }
+    
+    ]
+    
+}
 
 
-    const logInBtn = document.getElementById("logInBtn")
-    logInBtn.addEventListener("click",()=>{
+const logInBtn = document.getElementById("logInBtn")
+logInBtn.addEventListener("click",()=>{
+
+    const logPasswordValue = log_inputs.find(item => item.name === "log_password").element.value;
+
+
+    const logError = log_inputs.some((i)=> !i.element.value)
+    
+    if (logError) {
+        return;
+    }
+
+    if (logPasswordValue.length < 8){
+       return;
+    }
     window.location.search = '?welcome';
+
 })
 
     
-    const createAccountBtn = document.getElementById('create')
-    createAccountBtn.addEventListener("click",()=>{
-    window.location.search = '?registration';
+const createAccountBtn = document.getElementById('create')
+createAccountBtn.addEventListener("click",()=>{
+window.location.search = '?registration';
 })
-}
+
 
 let inputs = []
 
