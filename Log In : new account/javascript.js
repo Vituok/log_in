@@ -116,14 +116,11 @@ const registrationBtn = document.getElementById("registrationBtn")
 
     inputs.forEach((value)=>item(value))
 
-
-     inputs.forEach((value)=>item(value))
-
      function item(value){
         if(value.element.value.length === 0)
             return value.element.classList.add('empty')
         else  value.element.classList.remove('empty')
-     }
+    }
 
 
     const hasError = inputs.some((input) => !input.element.value)
