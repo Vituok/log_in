@@ -81,6 +81,7 @@ input{
 
     flex-direction: column;
     gap: 8px;
+    padding: 10%;
     width: 70%;
     aspect-ratio: 16/9;
 
@@ -120,3 +121,23 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 .welcome h6 :hover{
     margin: 0px
 }
+
+
+.empty {
+    display: block;
+
+    line-height: 1.5;
+    background-color: #ffa8a8;
+    background-clip: padding-box;
+    border: 1px solid #fa1717;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+.empty:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 242, 242, 0.25);
+  }

@@ -108,7 +108,25 @@ if(page === `?${pages.registration}`) {
 
 const registrationBtn = document.getElementById("registrationBtn")
     registrationBtn.addEventListener("click",()=>{
-       const hasError = inputs.some((input) => !input.element.value)
+
+
+
+    //если нет значения поле становится красным
+
+
+    inputs.forEach((value)=>item(value))
+
+
+     inputs.forEach((value)=>item(value))
+
+     function item(value){
+        if(value.element.value.length === 0)
+            return value.element.classList.add('empty')
+        else  value.element.classList.remove('empty')
+     }
+
+
+    const hasError = inputs.some((input) => !input.element.value)
         if(hasError){
             return;
         }
