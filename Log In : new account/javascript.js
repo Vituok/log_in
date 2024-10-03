@@ -56,6 +56,7 @@ logInBtn.addEventListener("click",()=>{
     }
 
     if (logPasswordValue.length < 8){
+        log_inputs.find(item => item.name === "log_password").element.classList.add('empty')
        return;
     }
     window.location.search = '?welcome';
@@ -111,17 +112,16 @@ const registrationBtn = document.getElementById("registrationBtn")
 
 
 
-    //если нет значения поле становится красным
+    //если input пустой становится красным
 
 
-    inputs.forEach((value)=>item(value))
-
-     function item(value){
-        if(value.element.value.length === 0)
-            return value.element.classList.add('empty')
-        else  value.element.classList.remove('empty')
-    }
-
+    window.addEventListener("input" && "click",
+        function(){
+            inputs.forEach((value)=>{
+            value.element.value.length === 0 ? value.element.classList.add('empty') : value.element.classList.remove('empty')
+            })
+        });
+    
 
     const hasError = inputs.some((input) => !input.element.value)
         if(hasError){

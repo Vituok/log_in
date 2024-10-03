@@ -17,7 +17,8 @@ body{
 .log_in{
     padding: 10px;
     
-    background-image: url(/img/1.jpeg);
+    border: #212529 4px;
+    border-radius: 30px;
     
     display: flex;
     justify-content: center;
@@ -27,13 +28,17 @@ body{
     width: 70%;
     aspect-ratio: 16/9;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: rgb(46, 46, 46);
     margin: 0px;
 
 }
 
+h6{
+    color: rgb(46, 46, 46);
+}
+
 h6:hover{
-color: brown;
+color: rgb(58, 174, 220);
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -51,8 +56,8 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
     border-radius: 30px;
     outline: none;
-    color: rgb(7, 81, 7);
-    background-color: rgb(225, 248, 220);
+    color: rgb(12, 140, 191);
+    background-color: rgb(206, 239, 251);
     border-color: rgb(231, 216, 216);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;
@@ -62,7 +67,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 .submit:hover{
        
     color: rgb(255, 255, 255);
-    background-color:rgb(7, 81, 7) ;
+    background-color:rgb(58, 174, 220) ;
 }
 
 input{
@@ -75,7 +80,8 @@ input{
 
 
 .registration{
-    background-image: url(/img/2.jpeg);
+    border: #212529 4px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
 
@@ -127,11 +133,12 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: block;
 
     line-height: 1.5;
-    background-color: #ffa8a8;
+    background-color: #fff3eb;
     background-clip: padding-box;
     border: 1px solid #fa1717;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    
   }
 
 .empty:focus {
