@@ -1,5 +1,5 @@
 body{
-    background-image: none;
+    background-color: #e8e9e9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,34 +48,63 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .submit{
+
+   
     width: 160px;
     height: 40px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border-radius: 30px;
-    outline: none;
-    color: rgb(12, 140, 191);
-    background-color: rgb(206, 239, 251);
-    border-color: rgb(231, 216, 216);
+    
+    color: white;
+
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
-.submit:hover{
+.submit:active{
        
-    color: rgb(255, 255, 255);
-    background-color:rgb(58, 174, 220) ;
+    color: #949ec2;
+    box-shadow: none;
+    
 }
 
 input{
+
     width: 100%;
+    line-height: 1.5;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px #959fc3;
+    border-radius: 0.25rem;
 }
 
 
+.registration h1{
+    color:#e8e9e9 ;
+    text-shadow:  -2px -2px 2px rgb(255, 255, 255),
+    1px 1px 2px #959fc3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+.registrationBtn{
+        color: #959fc3;
 
+
+        
+    
+        box-shadow: 12px 12px 10px rgba(15, 15, 15, 0.315),
+        -10px -10px 10px white;
+        
+        border: none;
+        /* text-shadow: inherit  1px 2px rgb(60, 60, 60); */
+        border-radius: 20px;
+        
+    
+    }
 
 
 
@@ -91,10 +120,6 @@ input{
     width: 70%;
     aspect-ratio: 16/9;
 
-}
-
-.registration h1{
-font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -131,19 +156,19 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 .empty {
     display: block;
-
     line-height: 1.5;
-    background-color: #fff3eb;
+    background-color: #eeeeee;
+    box-shadow:  1px 1px 2px  rgb(241, 139, 139);
     background-clip: padding-box;
-    border: 1px solid #fa1717;
+    border: 3px #646d90;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     
   }
 
 .empty:focus {
-    color: #212529;
-    background-color: #fff;
+    color: #fcfdff;
+    background-color:#eedfdf;
     border-color: #bdbdbd;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(255, 242, 242, 0.25);

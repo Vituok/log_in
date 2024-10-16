@@ -127,7 +127,6 @@ input.element.addEventListener('focus', deleteEmpty)
 const registrationBtn = document.getElementById("registrationBtn")
     registrationBtn.addEventListener("click",()=>{
 
-
     //если input пустой становится красным
 
     const password = inputs.find(element => element.name === "password")
