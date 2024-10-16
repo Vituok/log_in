@@ -124,7 +124,6 @@ input.element.addEventListener('focus', deleteEmpty)
 
 
 
-
 const registrationBtn = document.getElementById("registrationBtn")
     registrationBtn.addEventListener("click",()=>{
 
@@ -133,21 +132,32 @@ const registrationBtn = document.getElementById("registrationBtn")
 
     const password = inputs.find(element => element.name === "password")
     const passwordConfirm = inputs.find(element => element.name === "passwordConfirm")
-    passwordLenght = password.element.value.length
+    const passwordLenght = password.element.value.length
+    const passwordConfirmLenght = passwordConfirm.element.value.length
+
 
     console.log()
 
         inputs.forEach((value)=>{
         value.element.value ? value.element.classList.remove('empty') : value.element.classList.add('empty')
-        
-        if (passwordLenght < 8 || password != passwordConfirm){
-            password.element.classList.add('empty')
-            passwordConfirm.element.classList.add('empty')
-        }       
-
     })
 
-       
+    if ( passwordLenght < 8 ){
+        password.element.classList.add('empty')
+    }
+    else{
+        password.element.classList.remove('empty')
+    }
+    
+    
+    if ( passwordConfirmLenght < 8 || password.element.value != passwordConfirm.element.value){
+        passwordConfirm.element.classList.add('empty')
+    }       
+    else{
+        passwordConfirm.element.classList.remove('empty')
+    }
+
+   
     const hasError = inputs.some((input) => !input.element.value)
         if(hasError || passwordLenght < 8||password.element.value != passwordConfirm.element.value) {
             return;
@@ -156,6 +166,9 @@ const registrationBtn = document.getElementById("registrationBtn")
         
     window.location.search = '?login';
 })
+
+
+
 
 
 
