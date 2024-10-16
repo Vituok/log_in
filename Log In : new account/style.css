@@ -109,14 +109,15 @@ input{
 
 
 .registration{
+    height: 100vh;
     border: #212529 4px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
-
+    align-items: center;
     flex-direction: column;
     gap: 8px;
-    padding: 10%;
+    padding-right: 50px;
     width: 70%;
     aspect-ratio: 16/9;
 
